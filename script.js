@@ -65,7 +65,7 @@ function printLunch()
 function printDinner()
 {
   var output = document.getElementById("Output");
-  var dropDown = document.getElementById("dinnerDropdown");
+  var dropDown = document.getElementById("dinnerDropDown");
   var num = dropDown.options[dropDown.selectedIndex].value;
 
   output.innerHTML = "";
