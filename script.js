@@ -62,3 +62,26 @@ function printLunch()
 
   output.innerHTML += recipes[num];
 }
+function printDinner()
+{
+  var output = document.getElementById("Output");
+  var dropDown = document.getElementById("dinnerDropdown");
+  var num = dropDown.options[dropDown.selectedIndex].value;
+
+  output.innerHTML = "";
+
+  let recipes = [
+    ["Ingredients: Salmon fillets, lemon, dill, garlic, olive oil. Instructions: Season salmon with lemon, dill, and garlic. Bake until flaky."],
+    ["Ingredients: Chickpeas, tomatoes, onions, garlic, curry spices. Instructions: Cook chickpeas with tomatoes, onions, garlic, and curry spices. Serve over rice."],
+    ["Ingredients: Beef strips, broccoli, carrots, soy sauce, ginger. Instructions: Stir-fry beef and veggies in soy sauce and ginger. Serve over noodles."],
+    ["Ingredients: Bell peppers, ground turkey, quinoa, black beans, tomatoes. Instructions: Stuff peppers with a mixture of turkey, quinoa, beans, and tomatoes. Bake until peppers are tender."],
+    ["Ingredients: Chicken thighs, lemon, herbs (rosemary, thyme), olive oil. Instructions: Marinate chicken in lemon, herbs, and oil. Grill until cooked through."],
+    ["Ingredients: Shrimp, broccoli, fettuccine pasta, Alfredo sauce. Instructions: Cook shrimp and broccoli. Toss with cooked pasta and Alfredo sauce."],
+    ["Ingredients: Eggplant slices, marinara sauce, mozzarella cheese, breadcrumbs. Instructions: Layer eggplant with marinara and cheese. Bake until bubbly."],
+    ["Ingredients: Salmon fillets, teriyaki sauce, mixed vegetables. Instructions: Marinate salmon in teriyaki sauce. Bake with mixed vegetables."],
+    ["Ingredients: Chickpeas, spinach, tomatoes, onions, garlic, cumin. Instructions: Cook chickpeas with spinach, tomatoes, onions, garlic, and cumin. Serve warm."],
+    ["Ingredients: Chicken breast, pasta, cherry tomatoes, pesto sauce. Instructions: Cook chicken, pasta, and tomatoes. Toss with pesto sauce."]
+  ]
+
+  output.innerHTML += recipes[num];
+}
