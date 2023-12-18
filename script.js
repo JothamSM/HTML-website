@@ -42,12 +42,23 @@ function printBreakfast()
 function printLunch()
 {
   var output = document.getElementById("Output");
-  var dropDown = document.getElementById("lunchDropDown");
+  var dropDown = document.getElementById("lunchDropdown");
   var num = dropDown.options[dropDown.selectedIndex].value;
 
   output.innerHTML = "";
 
   let recipes = [
-    
+    ["Ingredients: Grilled chicken, romaine lettuce, Caesar dressing, whole wheat tortilla. Instructions: Fill tortilla with chicken, lettuce, and dressing. Roll up and serve."],
+    ["Ingredients: Cooked quinoa, chickpeas, cucumber, cherry tomatoes, feta cheese, lemon vinaigrette. Instructions: Toss ingredients together. Drizzle with vinaigrette."],
+    ["Ingredients: Sliced turkey, avocado, lettuce, tomato, whole grain wrap. Instructions: Layer ingredients on the wrap. Roll and enjoy."],
+    ["Instructions: Assemble sandwich with mozzarella, tomatoes, and basil. Grill until cheese melts. Drizzle with balsamic glaze."],
+    ["Ingredients: Quinoa, roasted sweet potatoes, chickpeas, avocado, kale, tahini dressing. Instructions: Arrange ingredients in a bowl. Drizzle with tahini dressing."],
+    ["Ingredients: Pasta, cherry tomatoes, olives, feta cheese, cucumber, Italian dressing. Instructions: Cook pasta. Toss with veggies, feta, and dressing."],
+    ["Ingredients: Tuna, celery, red onion, mayo, lettuce leaves. Instructions: Mix tuna, celery, onion, and mayo. Spoon into lettuce leaves."],
+    ["Ingredients: Flour tortillas, black beans, corn, bell peppers, cheese, salsa. Instructions: Fill tortillas with beans, corn, peppers, and cheese. Cook until cheese melts. Serve with salsa."],
+    ["Ingredients: Chicken breast, broccoli, bell peppers, snap peas, soy sauce. Instructions: Stir-fry chicken and veggies in soy sauce. Serve over rice."],
+    ["Ingredients: Chicken breast, spinach, feta cheese, garlic, lemon, olive oil. Instructions: Mix spinach, feta, garlic, and lemon. Stuff into chicken breast. Bake until cooked."]
   ]
+
+  output.innerHTML += recipes[num];
 }
