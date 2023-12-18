@@ -64,9 +64,9 @@ function printLunch()
 }
 function printDinner()
 {
-  var output = document.getElementById("Output");
-  var dropDown = document.getElementById("dinnerDropDown");
-  var num = dropDown.options[dropDown.selectedIndex].value;
+  let output = document.getElementById("Output");
+  let dropDown = document.getElementById("dinnerDropDown");
+  let num = dropDown.options[dropDown.selectedIndex].value;
 
   output.innerHTML = "";
 
@@ -82,6 +82,21 @@ function printDinner()
     ["Ingredients: Chickpeas, spinach, tomatoes, onions, garlic, cumin. Instructions: Cook chickpeas with spinach, tomatoes, onions, garlic, and cumin. Serve warm."],
     ["Ingredients: Chicken breast, pasta, cherry tomatoes, pesto sauce. Instructions: Cook chicken, pasta, and tomatoes. Toss with pesto sauce."]
   ]
+  let pasteImg = document.getElementById("dinnerImg");
+ 
 
+  let images = [
+    ["Baked-Salmon.jpg"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ] 
+  pasteImg.src =  "Images/Dinner/" + images[0];
   output.innerHTML += recipes[num];
 }
