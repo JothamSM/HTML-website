@@ -15,3 +15,33 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+function toggleExplanations()
+{
+var buttonPressed = false; // Flag variable to track button press
+
+// Object mapping features to their explanations
+var featureExplanations = {
+  "Classic Omelette": "Ingredients: Eggs, diced vegetables (bell peppers, onions, tomatoes), cheese, salt, pepper. Instructions: Whisk eggs, pour into a heated, oiled pan. Add veggies, cheese, salt, and pepper. Fold and cook until set."
+  // Add more recipes and their explanations here if needed
+};
+
+var recipesList = document.getElementById("Recipes");
+
+for (var i = 0; i < recipesList.children.length; i++) {
+  var listItem = recipesList.children[i];
+  var recipe = listItem.textContent.trim();
+  var explanation = featureExplanations[recipe];
+
+  if (explanation) {
+    if (!listItem.querySelector(".explanation")) {
+      var explanationElement = document.createElement("p");
+      explanationElement.classList.add("explanation");
+      explanationElement.textContent = explanation;
+      listItem.appendChild(explanationElement);
+    } else {
+      var explanationToRemove = listItem.querySelector(".explanation");
+      explanationToRemove.parentNode.removeChild(explanationToRemove);
+    }
+  }
+}
+}
