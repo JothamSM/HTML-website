@@ -18,6 +18,7 @@ function myFunction() {
 
 function printBreakfast()
 {
+<<<<<<< Updated upstream
     var output = document.getElementById("Output");
     var dropDown = document.getElementById("breakfastDropDown");
     var num = dropDown.options[dropDown.selectedIndex].value;
@@ -39,4 +40,7 @@ function printBreakfast()
 
     output.innerHTML += recipes[num];
 
+=======
+  
+>>>>>>> Stashed changes
 }
