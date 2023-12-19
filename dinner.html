@@ -16,26 +16,29 @@
         </div>
             <br>
             <div id="center">
-            <h1>Dinner Recipes</h1>
-            <br>
-            
-            <select id="dinnerDropDown">
-                <option value="0">Baked Salmon with Lemon-Dill Sauce</option>
-                <option value="1">Vegetarian Chickpea Curry</option>
-                <option value="2">Beef and Vegetable Stir-Fry</option>
-                <option value="3">Stuffed Bell Peppers with Ground Turkey</option>
-                <option value="4">Lemon Herb Grilled Chicken</option>
-                <option value="5">Shrimp and Broccoli Alfredo</option>
-                <option value="6">Vegetarian Eggplant Parmesan</option>
-                <option value="7">Teriyaki Salmon with Vegetables</option>
-                <option value="8">Chickpea and Spinach Stew</option>
-                <option value="9">Pesto Chicken Pasta</option>
-            </select>
-            <button onclick="printDinner()">Get recipe</button>
-            <button onclick="resetBox()">Clear Box</button>
-            <br>
-            <br>
-            <div id="Output"><br><img id="dinnerImg" src="dsf" height="300px" alt="Picture of chosen food"/><br></div>
+                <h1>Dinner Recipes</h1>
+                <br>
+                
+                <select id="dinnerDropDown">
+                    <option value="0">Baked Salmon with Lemon-Dill Sauce</option>
+                    <option value="1">Vegetarian Chickpea Curry</option>
+                    <option value="2">Beef and Vegetable Stir-Fry</option>
+                    <option value="3">Stuffed Bell Peppers with Ground Turkey</option>
+                    <option value="4">Lemon Herb Grilled Chicken</option>
+                    <option value="5">Shrimp and Broccoli Alfredo</option>
+                    <option value="6">Vegetarian Eggplant Parmesan</option>
+                    <option value="7">Teriyaki Salmon with Vegetables</option>
+                    <option value="8">Chickpea and Spinach Stew</option>
+                    <option value="9">Pesto Chicken Pasta</option>
+                </select>
+                <button onclick="printDinner()">Get recipe</button>
+                
+                <br>
+                <br>
+                <div id="Output">
+                    <img id="dinnerImg" src="dsf" height="300px" alt="Picture of chosen food"/>
+                    <div id="recipeText"></div>
+                </div>
         </div>
     </body>
 </html>

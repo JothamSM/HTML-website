@@ -16,26 +16,29 @@
         </div>
         <br>
         <div id="center">
-        <h1>Breakfast Recipes</h1>
-        <br> 
-        
-        <select id="breakfastDropDown">
-            <option value="0">Classic Omelette</option>
-            <option value="1">Overnight Oats</option>
-            <option value="2">Avocado Toast with Poached Egg</option>
-            <option value="3">Greek Yogurt Parfait</option>
-            <option value="4">Pancakes with Maple Syrup</option>
-            <option value="5">Vegetable and Cheese Frittata</option>
-            <option value="6">Smoothie Bowl</option>
-            <option value="7">Breakfast Burrito</option>
-            <option value="8">Quinoa Breakfast Bowl</option>
-            <option value="9">French Toast Sticks</option>
-        </select>
-        <button onclick="printBreakfast()">Get recipe</button>
-        <button onclick="resetBox()">Clear Box</button>
-        <br>
-        <br>
-        <div id="Output"><br><img id="breakfastImg" src="dsf" height="300px" alt="Picture of chosen food"/><br></div>
+            <h1>Breakfast Recipes</h1>
+            <br> 
+            
+            <select id="breakfastDropDown">
+                <option value="0">Classic Omelette</option>
+                <option value="1">Overnight Oats</option>
+                <option value="2">Avocado Toast with Poached Egg</option>
+                <option value="3">Greek Yogurt Parfait</option>
+                <option value="4">Pancakes with Maple Syrup</option>
+                <option value="5">Vegetable and Cheese Frittata</option>
+                <option value="6">Smoothie Bowl</option>
+                <option value="7">Breakfast Burrito</option>
+                <option value="8">Quinoa Breakfast Bowl</option>
+                <option value="9">French Toast Sticks</option>
+            </select>
+            <button onclick="printBreakfast()">Get recipe</button>
+            
+            <br>
+            <br>
+            <div id="Output">
+                <img id="breakfastImg" src="dsf" height="300px" alt="Picture of chosen food"/>
+                <div id="recipeText"></div>
+            </div>
         </div>
     </body>
 </html>

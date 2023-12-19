@@ -18,7 +18,7 @@ function myFunction() {
 
 function printBreakfast()
 {
-    let output = document.getElementById("Output");
+    let recipeText = document.getElementById("recipeText");
     let dropDown = document.getElementById("breakfastDropDown");
     let num = dropDown.options[dropDown.selectedIndex].value;
     let dDText = dropDown.options[dropDown.selectedIndex].textContent;
@@ -50,7 +50,7 @@ function printBreakfast()
     ];
 
     pasteImg.src =  "Images/Breakfast/" + images[num];
-    output.innerHTML += dDText + " " + recipes[num];
+    recipeText.innerHTML = dDText + " " + recipes[num];
 }
 function printLunch()
 {
@@ -91,7 +91,7 @@ function printLunch()
 }
 function printDinner()
 {
-  let output = document.getElementById("Output");
+  let recipeText = document.getElementById("recipeText");
   let dropDown = document.getElementById("dinnerDropDown");
   let num = dropDown.options[dropDown.selectedIndex].value;
   let dDText = dropDown.options[dropDown.selectedIndex].textContent;
@@ -125,7 +125,7 @@ function printDinner()
     ["Pesto Chicken Pasta.jpg"]
   ] 
   pasteImg.src =  "Images/Dinner/" + images[num];
-  output.innerHTML += dDText + " " + recipes[num];
+  recipeText.innerHTML = dDText + " " + recipes[num];
 }
 function resetBox()
 {
