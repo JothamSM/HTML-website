@@ -35,16 +35,16 @@ function printBreakfast()
         ["Ingredients: Bread slices, eggs, milk, cinnamon, vanilla extract, syrup. Instructions: Dip bread in a mixture of eggs, milk, cinnamon, and vanilla. Cook until golden. Serve with syrup."]
     ];
     let images = [
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      []
+      ["Classic-Omelette.jpg"],
+      ["Overnight-Oats.jpg"],
+      ["Avocado-Toast.jpeg"],
+      ["Greek-Yogurt-Parfait.jpg"],
+      ["Pancakes.jpg"],
+      ["Vegetables-Cheese-Frittata.jpg"],
+      ["Smoothie-Bowl.jpg"],
+      ["Breakfast-Burrito.jpg"],
+      ["Quinoa-Breakfast-Bowl.jpg"],
+      ["French-Toast-Sticks.jpg"]
     ];
 
     pasteImg.src =  "Images/Dinner/" + images[num];
@@ -70,16 +70,16 @@ function printLunch()
     ["Ingredients: Chicken breast, spinach, feta cheese, garlic, lemon, olive oil. Instructions: Mix spinach, feta, garlic, and lemon. Stuff into chicken breast. Bake until cooked."]
   ]
   let images = [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
+    ["Chicken-Caesar-Salad-Wrap.jpg"],
+    ["Quinoa-Chickpea-Salad.png"]
+    ["Turkey-Avocado-Wrap.jpg"],
+    ["Caprese-Panini.jpg"],
+    ["Vegetarian-Buddha-Bowl.jpg"],
+    ["Mediterranean-Pasta-Salad.jpg"],
+    ["Tuna-Salad-Lettuce-Cups.jpg"],
+    ["Veggie-Quesadilla.jpg"],
+    ["Chicken-Vegetable-Stir-Fry.jpg"],
+    ["Spinach-Feta-Stuffed-Chicken.jpg"],
   ];
 
   pasteImg.src =  "Images/Dinner/" + images[num];
