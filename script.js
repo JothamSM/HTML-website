@@ -54,7 +54,7 @@ function printBreakfast()
 }
 function printLunch()
 {
-  let output = document.getElementById("Output");
+  let recipeText = document.getElementById("recipeText");
   let dropDown = document.getElementById("lunchDropdown");
   let num = dropDown.options[dropDown.selectedIndex].value;
   let dDText = dropDown.options[dropDown.selectedIndex].textContent;
@@ -87,7 +87,7 @@ function printLunch()
   ];
 
   pasteImg.src =  "Images/Lunch/" + images[num];
-  output.innerHTML += dDText + " " + recipes[num];
+  recipeText.innerHTML = dDText + " " + recipes[num];
 }
 function printDinner()
 {
