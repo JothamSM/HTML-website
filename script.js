@@ -22,8 +22,6 @@ function printBreakfast()
     var dropDown = document.getElementById("breakfastDropDown");
     var num = dropDown.options[dropDown.selectedIndex].value;
 
-    output.innerHTML = "";
-
     let recipes = [
         ["Ingredients: Eggs, diced vegetables (bell peppers, onions, tomatoes), cheese, salt, pepper. Instructions: Whisk eggs, pour into a heated, oiled pan. Add veggies, cheese, salt, and pepper. Fold and cook until set."],
         ["Ingredients: Rolled oats, milk (or yogurt), chia seeds, honey, fruits (berries, banana slices). Instructions: Mix oats, milk, chia seeds, and honey. Refrigerate overnight. Top with fruits before serving."],
@@ -99,4 +97,8 @@ function printDinner()
   ] 
   pasteImg.src =  "Images/Dinner/" + images[0];
   output.innerHTML += recipes[num];
+}
+function resetBox()
+{
+  document.getElementById("Output").innerHTML = "";
 }
