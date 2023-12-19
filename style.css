@@ -53,6 +53,7 @@ body {
     height: 500px;
     border: 2px solid;
     overflow-y:scroll;
+    margin:auto;
   }
   #center{
     text-align: center;
