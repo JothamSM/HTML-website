@@ -54,3 +54,6 @@ body {
     border: 2px solid;
     overflow-y:scroll;
   }
+  #center{
+    text-align: center;
+  }
