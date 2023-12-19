@@ -38,7 +38,7 @@ function printBreakfast()
     let pasteImg = document.getElementById("breakfastImg");
     let images = [
       ["Classic-Omelette.jpg"],
-      ["Overnight-Oats.jpg"],
+      ["Overnight-Oats.jpeg"],
       ["Avocado-Toast.jpeg"],
       ["Greek-Yogurt-Parfait.jpg"],
       ["Pancakes.jpg"],
