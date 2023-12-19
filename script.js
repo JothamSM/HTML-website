@@ -75,7 +75,7 @@ function printLunch()
   let pasteImg = document.getElementById("lunchImg");
   let images = [
     ["Chicken-Caesar-Salad-Wrap.jpg"],
-    ["Quinoa-Chickpea-Salad.png"]
+    ["Quinoa-Chickpea-Salad.png"],
     ["Turkey-Avocado-Wrap.jpg"],
     ["Caprese-Panini.jpg"],
     ["Vegetarian-Buddha-Bowl.jpg"],
