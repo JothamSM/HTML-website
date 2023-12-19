@@ -34,6 +34,7 @@ function printBreakfast()
         ["Ingredients: Cooked quinoa, almond milk, sliced almonds, berries, honey. Instructions: Mix quinoa with almond milk. Top with almonds, berries, and honey."],
         ["Ingredients: Bread slices, eggs, milk, cinnamon, vanilla extract, syrup. Instructions: Dip bread in a mixture of eggs, milk, cinnamon, and vanilla. Cook until golden. Serve with syrup."]
     ];
+    let pasteImg = document.getElementById("breakfastImg");
     let images = [
       ["Classic-Omelette.jpg"],
       ["Overnight-Oats.jpg"],
@@ -47,7 +48,7 @@ function printBreakfast()
       ["French-Toast-Sticks.jpg"]
     ];
 
-    pasteImg.src =  "Images/Dinner/" + images[num];
+    pasteImg.src =  "Images/Breakfast/" + images[num];
     output.innerHTML += recipes[num];
 }
 function printLunch()
@@ -69,6 +70,7 @@ function printLunch()
     ["Ingredients: Chicken breast, broccoli, bell peppers, snap peas, soy sauce. Instructions: Stir-fry chicken and veggies in soy sauce. Serve over rice."],
     ["Ingredients: Chicken breast, spinach, feta cheese, garlic, lemon, olive oil. Instructions: Mix spinach, feta, garlic, and lemon. Stuff into chicken breast. Bake until cooked."]
   ]
+  let pasteImg = document.getElementById("lunchImg");
   let images = [
     ["Chicken-Caesar-Salad-Wrap.jpg"],
     ["Quinoa-Chickpea-Salad.png"]
@@ -82,7 +84,7 @@ function printLunch()
     ["Spinach-Feta-Stuffed-Chicken.jpg"],
   ];
 
-  pasteImg.src =  "Images/Dinner/" + images[num];
+  pasteImg.src =  "Images/Lunch/" + images[num];
   output.innerHTML += recipes[num];
 }
 function printDinner()
