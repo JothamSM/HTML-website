@@ -43,7 +43,6 @@ function printLunch()
   var dropDown = document.getElementById("lunchDropdown");
   var num = dropDown.options[dropDown.selectedIndex].value;
 
-  output.innerHTML = "";
 
   let recipes = [
     ["Ingredients: Grilled chicken, romaine lettuce, Caesar dressing, whole wheat tortilla. Instructions: Fill tortilla with chicken, lettuce, and dressing. Roll up and serve."],
@@ -66,7 +65,6 @@ function printDinner()
   let dropDown = document.getElementById("dinnerDropDown");
   let num = dropDown.options[dropDown.selectedIndex].value;
 
-  output.innerHTML = "";
 
   let recipes = [
     ["Ingredients: Salmon fillets, lemon, dill, garlic, olive oil. Instructions: Season salmon with lemon, dill, and garlic. Bake until flaky."],
