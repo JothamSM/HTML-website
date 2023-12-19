@@ -152,3 +152,15 @@ body.home {
   padding:16px;
   color:#023a44;
  }
+ .breakfastButtons{
+  color:#052d38;
+  background-color: rgba(150, 163, 177, 0.776);
+ }
+ .lunchButtons{
+  color:#02442c;
+  background-color: rgba(130, 236, 130, 0.776);
+ }
+ .dinnerButtons{
+  background-color: rgba(119, 136, 153, 0.776);
+  color:#023a44;
+ }
