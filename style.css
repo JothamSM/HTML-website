@@ -119,3 +119,36 @@ body.home {
   background: linear-gradient(to left,#333,#333, #04AA6D);
   float:left;
  }
+ #breakfastColor{
+  width: 1000px;
+    height: 500px;
+    border: 2px solid;
+    overflow:auto;
+    margin:auto;
+    background-color: rgba(150, 163, 177, 0.776);
+    border-radius: 30px;
+    padding:16px;
+    color:#052d38;
+ }
+ #lunchColor{
+  width: 1000px;
+  height: 500px;
+  border: 2px solid;
+  overflow:auto;
+  margin:auto;
+  background-color: rgba(130, 236, 130, 0.776);
+  border-radius: 30px;
+  padding:16px;
+  color:#02442c;
+ }
+ #dinnerColor{
+  width: 1000px;
+  height: 500px;
+  border: 2px solid;
+  overflow:auto;
+  margin:auto;
+  background-color: rgba(119, 136, 153, 0.776);
+  border-radius: 30px;
+  padding:16px;
+  color:#023a44;
+ }
