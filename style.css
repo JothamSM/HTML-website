@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to top,#333, #04AA6D);
   }
   
   .header {
@@ -61,4 +62,9 @@ body {
   h1{
     text-decoration: underline;
   }
-  
+ #navName{
+  background: linear-gradient(to right,#14141f, #333,#333, #04AA6D);
+ }
+ #navName1{
+  background: linear-gradient(to left,#333,#333, #04AA6D);
+ }
