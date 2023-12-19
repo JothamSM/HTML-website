@@ -63,8 +63,6 @@ body {
     text-decoration: underline;
   }
  #navName{
-  background: linear-gradient(to right,#14141f, #333,#333, #04AA6D);
- }
- #navName1{
   background: linear-gradient(to left,#333,#333, #04AA6D);
+  float:left;
  }
