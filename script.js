@@ -83,8 +83,8 @@ function printDinner()
 
   let images = [
     ["Baked-Salmon.jpg"],
-    [],
-    [],
+    ["Vegetarian-ChickPea-Curry.jpg"],
+    ["Beef and Vegetable Stir-Fry.jpg"],
     [],
     [],
     [],
@@ -93,7 +93,7 @@ function printDinner()
     [],
     []
   ] 
-  pasteImg.src =  "Images/Dinner/" + images[0];
+  pasteImg.src =  "Images/Dinner/" + images[num];
   output.innerHTML += recipes[num];
 }
 function resetBox()
