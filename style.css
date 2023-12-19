@@ -1,8 +1,49 @@
-body {
+body.home {
     margin: 0;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     background:#00b359;
+    animation: rotateImages 15s linear infinite;
+    background-size: cover;
+    background-position: center;
+  }
+  body.breakfast {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#00b359;
+    background-image: url('https://www.justataste.com/wp-content/uploads/2014/01/easy-cinnamon-french-toast-sticks.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  body.lunch {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#00b359;
+    background-image: url('https://th.bing.com/th/id/OIP.n0j64vwIOUeC8OdN9VeCkAAAAA?w=198&h=277&c=7&r=0&o=5&pid=1.7');
+    background-size: cover;
+    background-position: center;
+  }
+  body.dinner {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#00b359;
+    background-image: url('https://danastable.com/wp-content/uploads/2022/08/Chinese-beef-vegetable-stir-fry-vertical-1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  @keyframes rotateImages {
+    0%, 100% {
+      background-image: url('https://th.bing.com/th/id/OIP.3Zy2jcElV-8Pv5l-RjBo7AHaLH?rs=1&pid=ImgDetMain');
+    }
+    33% {
+      background-image: url('https://www.justataste.com/wp-content/uploads/2014/01/easy-cinnamon-french-toast-sticks.jpg');
+    }
+    66% {
+      background-image: url('https://danastable.com/wp-content/uploads/2022/08/Chinese-beef-vegetable-stir-fry-vertical-1.jpg');
+    }
   }
   
   .header {
@@ -55,9 +96,18 @@ body {
     border: 2px solid;
     overflow-y:scroll;
     margin:auto;
+    background-color: white;
   }
   #center{
     text-align: center;
+    margin:auto;
+  }
+  #centerHome{
+    text-align: center;
+    margin:auto;
+    background-color: white;
+    height:550px;
+    width:750px;
   }
   h1{
     text-decoration: underline;

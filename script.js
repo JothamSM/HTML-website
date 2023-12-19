@@ -83,7 +83,7 @@ function printLunch()
     ["Tuna-Salad-Lettuce-Cups.jpg"],
     ["Veggie-Quesadilla.jpg"],
     ["Chicken-Vegetable-Stir-Fry.jpg"],
-    ["Spinach-Feta-Stuffed-Chicken.jpg"],
+    ["Spinach-Feta-Stuffed-Chicken.jpg"]
   ];
 
   pasteImg.src =  "Images/Lunch/" + images[num];
@@ -129,5 +129,7 @@ function printDinner()
 }
 function resetBox()
 {
-  document.getElementById("Output").innerHTML = "";
+  let output = document.getElementById("Output");
+
+  output.innerHTML = "";
 }
