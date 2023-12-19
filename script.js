@@ -18,9 +18,10 @@ function myFunction() {
 
 function printBreakfast()
 {
-    var output = document.getElementById("Output");
-    var dropDown = document.getElementById("breakfastDropDown");
-    var num = dropDown.options[dropDown.selectedIndex].value;
+    let output = document.getElementById("Output");
+    let dropDown = document.getElementById("breakfastDropDown");
+    let num = dropDown.options[dropDown.selectedIndex].value;
+    let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
     let recipes = [
         ["Ingredients: Eggs, diced vegetables (bell peppers, onions, tomatoes), cheese, salt, pepper. Instructions: Whisk eggs, pour into a heated, oiled pan. Add veggies, cheese, salt, and pepper. Fold and cook until set."],
@@ -49,13 +50,14 @@ function printBreakfast()
     ];
 
     pasteImg.src =  "Images/Breakfast/" + images[num];
-    output.innerHTML += dropDown.value + recipes[num];
+    output.innerHTML += dDText + " " + recipes[num];
 }
 function printLunch()
 {
-  var output = document.getElementById("Output");
-  var dropDown = document.getElementById("lunchDropdown");
-  var num = dropDown.options[dropDown.selectedIndex].value;
+  let output = document.getElementById("Output");
+  let dropDown = document.getElementById("lunchDropdown");
+  let num = dropDown.options[dropDown.selectedIndex].value;
+  let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
 
   let recipes = [
@@ -85,13 +87,14 @@ function printLunch()
   ];
 
   pasteImg.src =  "Images/Lunch/" + images[num];
-  output.innerHTML += recipes[num];
+  output.innerHTML += dDText + " " + recipes[num];
 }
 function printDinner()
 {
   let output = document.getElementById("Output");
   let dropDown = document.getElementById("dinnerDropDown");
   let num = dropDown.options[dropDown.selectedIndex].value;
+  let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
 
   let recipes = [
@@ -122,7 +125,7 @@ function printDinner()
     ["Pesto Chicken Pasta.jpg"]
   ] 
   pasteImg.src =  "Images/Dinner/" + images[num];
-  output.innerHTML += recipes[num];
+  output.innerHTML += dDText + " " + recipes[num];
 }
 function resetBox()
 {
