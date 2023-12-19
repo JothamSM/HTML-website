@@ -49,7 +49,7 @@ function printBreakfast()
     ];
 
     pasteImg.src =  "Images/Breakfast/" + images[num];
-    output.innerHTML += recipes[num];
+    output.innerHTML += dropDown.value + recipes[num];
 }
 function printLunch()
 {
