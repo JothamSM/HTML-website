@@ -85,13 +85,13 @@ function printDinner()
     ["Baked-Salmon.jpg"],
     ["Vegetarian-ChickPea-Curry.jpg"],
     ["Beef and Vegetable Stir-Fry.jpg"],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
+    ["Stuffed Bell Peppers with Ground Turkey.jpg"],
+    ["Lemon-Herb-Grilled-Chicken.jpg"],
+    ["Broccoli-Shrimp-Alfredo.jpg"],
+    ["Vegetarian Eggplant Parmesan.jpg"],
+    ["Teriyaki Salmon with Vegetables.jpg"],
+    ["Chickpea and Spinach Stew.png"],
+    ["Pesto Chicken Pasta.jpg"]
   ] 
   pasteImg.src =  "Images/Dinner/" + images[num];
   output.innerHTML += recipes[num];
