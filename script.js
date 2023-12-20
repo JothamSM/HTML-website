@@ -134,16 +134,16 @@ function resetBox()
   output.innerHTML = "";
 }
 
-window.onload = function() {
-  const stylesheet = document.getElementById('stylesheet');
+function christmasCss() {
   const currentDate = new Date();
   const currentMonth = currentDate.getMonth() + 1; // Adding 1 because getMonth() returns a zero-based index
   const currentDay = currentDate.getDate(); // Get the day of the month
+  const navbar = document.getElementById('navbar');
 
   // Check the current month and day, and change the stylesheet accordingly
   if (currentMonth === 12 && currentDay >= 20 && currentDay <= 25) {
-    stylesheet.href = 'christmas.css'; // Apply Christmas stylesheet for Dec 20 to Dec 25
+    navbar.className += "Christmas";
   } else {
-    stylesheet.href = 'default.css'; // Use default stylesheet for other dates or months
+    navbar.className = "navbar";
   }
 }
