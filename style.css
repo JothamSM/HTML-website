@@ -332,13 +332,15 @@ body.homeChristmas{
     background-color: yellow;
     color: darkred;
   }
-  .burger{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+  .navbar a{
+    float: none;
+    display:block;
+    text-align: left;
   }
-  .navbar #mylinks{
-    display: none;
+  #myLinks{
+    float:none;
   }
+}
+#myLinks{
+  float:right;
 }
