@@ -141,7 +141,7 @@ function christmasCss() {
   const navbar = document.getElementById('navbar');
 
   // Check the current month and day, and change the stylesheet accordingly
-  if (currentMonth === 12 && currentDay >= 20 && currentDay <= 25) {
+  if (currentMonth == 12 && currentDay >= 20 && currentDay <= 25) {
     navbar.className += "Christmas";
   } else {
     navbar.className = "navbar";
