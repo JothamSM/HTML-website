@@ -138,16 +138,12 @@ window.onload = function() {
   const stylesheet = document.getElementById('stylesheet');
   const currentDate = new Date();
   const currentMonth = currentDate.getMonth() + 1; // Adding 1 because getMonth() returns a zero-based index
-  const currentDay = currentDate.getDay() + 1;
+  const currentDay = currentDate.getDate(); // Get the day of the month
 
-  // Check the current month and change the stylesheet accordingly
-  if (currentMonth === 12) {
-    if (currentDay === 20 ||currentDay === 22 ||currentDay === 23 ||currentDay === 24 ||currentDay === 25){
-
-    stylesheet.href = 'christmas.css';
-
-    }
+  // Check the current month and day, and change the stylesheet accordingly
+  if (currentMonth === 12 && currentDay >= 20 && currentDay <= 25) {
+    stylesheet.href = 'christmas.css'; // Apply Christmas stylesheet for Dec 20 to Dec 25
   } else {
-    stylesheet.href = 'christmas.css'; 
+    stylesheet.href = 'default.css'; // Use default stylesheet for other dates or months
   }
 }
