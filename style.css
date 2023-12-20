@@ -318,11 +318,11 @@ body.homeChristmas{
 }
 
 .navbarChristmas a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: lime;
+  color: darkred;
 }
 
 .navbarChristmas a.active {
-  background-color: #04AA6D;
+  background-color: darkgreen;
   color: white;
 }
