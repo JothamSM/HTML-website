@@ -120,13 +120,8 @@ body.home {
     text-decoration: underline;
     
   }
-<<<<<<< Updated upstream
  .navName{
   background: #333,;
-=======
- #navName{
-  background: #333;
->>>>>>> Stashed changes
   float:left;
   font-family: Georgia, 'Times New Roman', Times, serif;
  }
