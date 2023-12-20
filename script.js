@@ -133,3 +133,21 @@ function resetBox()
 
   output.innerHTML = "";
 }
+
+window.onload = function() {
+  const stylesheet = document.getElementById('stylesheet');
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth() + 1; // Adding 1 because getMonth() returns a zero-based index
+  const currentDay = currentDate.getDay() + 1;
+
+  // Check the current month and change the stylesheet accordingly
+  if (currentMonth === 12) {
+    if (currentDay === 20 ||currentDay === 22 ||currentDay === 23 ||currentDay === 24 ||currentDay === 25){
+
+    stylesheet.href = 'christmas.css';
+
+    }
+  } else {
+    stylesheet.href = 'christmas.css'; 
+  }
+}
