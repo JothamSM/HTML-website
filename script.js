@@ -139,11 +139,14 @@ function christmasCss() {
   const currentMonth = currentDate.getMonth() + 1; // Adding 1 because getMonth() returns a zero-based index
   const currentDay = currentDate.getDate(); // Get the day of the month
   const navbar = document.getElementById('navbar');
+  const home = document.getElementById('home');
 
   // Check the current month and day, and change the stylesheet accordingly
   if (currentMonth == 12 && currentDay >= 20 && currentDay <= 25) {
     navbar.className += "Christmas";
+    home.className += "Christmas";
   } else {
     navbar.className = "navbar";
+    home.className = "home";
   }
 }

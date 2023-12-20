@@ -305,7 +305,7 @@ body.homeChristmas{
 }
 .navbarChristmas{
   overflow: hidden;
-  background: linear-gradient(to right, red, white, green);
+  background: linear-gradient(to left, red, white, green);
 }
 .navbarChristmas a {
   float: left;
