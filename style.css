@@ -277,3 +277,27 @@ body.home {
 }
 
 
+body.homeChristmas{
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#00b359;
+  animation: rotateImagesChristmas 15s linear infinite;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes rotateImagesChristmas {
+  0%, 100% {
+    background-image: url('https://th.bing.com/th/id/R.11257cea969386e889ed3e19ae70a4b1?rik=HQ1dUy%2b9MwKAFg&riu=http%3a%2f%2fwww.hdwallpaper.nu%2fwp-content%2fuploads%2f2017%2f03%2fchristmas-1-2.jpg&ehk=FMTJTvjgvjAqJYyE31X29NP4WKImVqpcjHH3GyoxcTs%3d&risl=&pid=ImgRaw&r=0');
+  }
+  33% {
+    background-image: url('https://images.unsplash.com/photo-1640546179899-63d63a2531f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+  66% {
+    background-image: url('https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+}
+#navbarChristmas {
+  overflow: hidden;
+  background: linear-gradient(to right, red, white, green);
+}
