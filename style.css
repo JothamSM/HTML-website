@@ -326,3 +326,10 @@ body.homeChristmas{
   background-color: darkgreen;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .navbarChristmas a:hover {
+    background-color: yellow;
+    color: darkred;
+  }
+}
