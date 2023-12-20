@@ -338,4 +338,7 @@ body.homeChristmas{
     background-color: black;
     margin: 6px 0;
   }
+  .navbar #mylinks{
+    display: none;
+  }
 }
