@@ -142,11 +142,19 @@ function christmasCss() {
   const home = document.getElementById('home');
 
   // Check the current month and day, and change the stylesheet accordingly
-  if (currentMonth == 12 && currentDay >= 21 && currentDay <= 25) {
+  if (currentMonth == 12 && currentDay >= 20 && currentDay <= 25) {
     navbar.className += "Christmas";
     home.className += "Christmas";
   } else {
     navbar.className = "navbar";
     home.className = "home";
+    
   }
+}
+function hide(){
+  var iframe = document.getElementById("iframe");
+  //let hidden = iframe.getAttribute("hidden")
+  //let hidden = element.getAttribute("hidden");
+
+  iframe.setAttribute("hidden", "hidden");
 }
