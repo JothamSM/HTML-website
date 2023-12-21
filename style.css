@@ -277,7 +277,7 @@ body.home {
 }
 
 @media (min-width: 768px) {
-  .dinnerButtons {
+  .dinnerButtons, .lunchButtons, .breakfastButtons {
     padding: .75rem 1.5rem;
   }
 }
@@ -342,4 +342,18 @@ body.homeChristmas{
     display:block;
     text-align: left;
   }
+  #breakfastColor{
+    width: 1000px;
+      height: 500px;
+      border: 2px solid;
+      overflow:auto;
+      margin:auto;
+      background-color: rgba(150, 163, 177, 0.776);
+      border-radius: 30px;
+      padding:16px;
+      color:#052d38;
+   }
+   #breakfastImg{
+      float: left;
+   }
 }
