@@ -58,7 +58,6 @@ body.home {
   }
   
   .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -308,7 +307,6 @@ body.homeChristmas{
   background: linear-gradient(to left, red, white, green);
 }
 .navbarChristmas a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -355,7 +353,7 @@ body.homeChristmas{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 975px) {
   .navbarChristmas a:hover {
     background-color: yellow;
     color: darkred;
@@ -386,4 +384,10 @@ body.homeChristmas{
     width: auto;
     height: auto;
    }
+}
+.navbar a.move{
+  float:right;
+}
+.navbarChristmas a.move{
+  float:right;
 }
