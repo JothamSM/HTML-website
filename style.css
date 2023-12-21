@@ -382,7 +382,7 @@ body.homeChristmas{
       width:auto;
       height:auto;
    }
-   #bfHeading{
+   #bfHeading, #lHeading, #dHeading{
     width: auto;
     height: auto;
    }
