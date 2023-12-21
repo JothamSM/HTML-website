@@ -326,6 +326,34 @@ body.homeChristmas{
   background-color: darkgreen;
   color: white;
 }
+#bfHeading{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    border: 2px solid;
+    background-color: rgba(150, 163, 177, 0.776);
+    border-radius: 30px;
+    color:#052d38;
+}
+#lHeading{
+  width: 1000px;
+  height: auto;
+  border: 2px solid;
+  margin:auto;
+  background-color: rgba(130, 236, 130, 0.776);
+  border-radius: 30px;
+  color:#02442c;
+}
+#dHeading{
+  width: 1000px;
+  height: auto;
+  border: 2px solid;
+  margin:auto;
+  background-color: rgba(119, 136, 153, 0.776);
+  border-radius: 30px;
+  color:#023a44;
+}
+
 
 @media screen and (max-width: 600px) {
   .navbarChristmas a:hover {
@@ -353,5 +381,9 @@ body.homeChristmas{
    #breakfastColor, #dinnerColor, #lunchColor, #centerHome{
       width:auto;
       height:auto;
+   }
+   #bfHeading{
+    width: auto;
+    height: auto;
    }
 }
