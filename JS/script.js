@@ -17,6 +17,7 @@ function myFunction() {
   }
 }
 
+
 function printBreakfast()
 {
     let recipeText = document.getElementById("recipeText");
@@ -24,6 +25,7 @@ function printBreakfast()
     let num = dropDown.options[dropDown.selectedIndex].value;
     let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
+    //array of breakfast recipes
     let recipes = [
         ["Ingredients: Eggs, diced vegetables (bell peppers, onions, tomatoes), cheese, salt, pepper. Instructions: Whisk eggs, pour into a heated, oiled pan. Add veggies, cheese, salt, and pepper. Fold and cook until set."],
         ["Ingredients: Rolled oats, milk (or yogurt), chia seeds, honey, fruits (berries, banana slices). Instructions: Mix oats, milk, chia seeds, and honey. Refrigerate overnight. Top with fruits before serving."],
@@ -37,6 +39,7 @@ function printBreakfast()
         ["Ingredients: Bread slices, eggs, milk, cinnamon, vanilla extract, syrup. Instructions: Dip bread in a mixture of eggs, milk, cinnamon, and vanilla. Cook until golden. Serve with syrup."]
     ];
     let pasteImg = document.getElementById("breakfastImg");
+    //array of breakfast images
     let images = [
       ["Classic-Omelette.jpg"],
       ["Overnight-Oats.jpeg"],
@@ -49,10 +52,12 @@ function printBreakfast()
       ["Quinoa-Breakfast-Bowl.jpg"],
       ["French-Toast-Sticks.jpg"]
     ];
-
+    //updates the source of the image already in html
     pasteImg.src =  "Images/Breakfast/" + images[num];
     recipeText.innerHTML = dDText + " " + recipes[num];
 }
+
+
 function printLunch()
 {
   let recipeText = document.getElementById("recipeText");
@@ -60,7 +65,7 @@ function printLunch()
   let num = dropDown.options[dropDown.selectedIndex].value;
   let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
-
+  //array of lunch recipes
   let recipes = [
     ["Ingredients: Grilled chicken, romaine lettuce, Caesar dressing, whole wheat tortilla. Instructions: Fill tortilla with chicken, lettuce, and dressing. Roll up and serve."],
     ["Ingredients: Cooked quinoa, chickpeas, cucumber, cherry tomatoes, feta cheese, lemon vinaigrette. Instructions: Toss ingredients together. Drizzle with vinaigrette."],
@@ -74,6 +79,7 @@ function printLunch()
     ["Ingredients: Chicken breast, spinach, feta cheese, garlic, lemon, olive oil. Instructions: Mix spinach, feta, garlic, and lemon. Stuff into chicken breast. Bake until cooked."]
   ]
   let pasteImg = document.getElementById("lunchImg");
+  //array of lunch images
   let images = [
     ["Chicken-Caesar-Salad-Wrap.jpg"],
     ["Quinoa-Chickpea-Salad.png"],
@@ -86,10 +92,12 @@ function printLunch()
     ["Chicken-Vegetable-Stir-Fry.jpg"],
     ["Spinach-Feta-Stuffed-Chicken.jpg"]
   ];
-
+  //updates src of image already in html
   pasteImg.src =  "Images/Lunch/" + images[num];
   recipeText.innerHTML = dDText + " " + recipes[num];
 }
+
+
 function printDinner()
 {
   let recipeText = document.getElementById("recipeText");
@@ -97,7 +105,7 @@ function printDinner()
   let num = dropDown.options[dropDown.selectedIndex].value;
   let dDText = dropDown.options[dropDown.selectedIndex].textContent;
 
-
+  //stores dinner recipes
   let recipes = [
     ["Ingredients: Salmon fillets, lemon, dill, garlic, olive oil. Instructions: Season salmon with lemon, dill, and garlic. Bake until flaky."],
     ["Ingredients: Chickpeas, tomatoes, onions, garlic, curry spices. Instructions: Cook chickpeas with tomatoes, onions, garlic, and curry spices. Serve over rice."],
@@ -112,7 +120,7 @@ function printDinner()
   ]
   let pasteImg = document.getElementById("dinnerImg");
  
-
+  //array storing dinner images
   let images = [
     ["Baked-Salmon.jpg"],
     ["Vegetarian-ChickPea-Curry.jpg"],
@@ -125,26 +133,22 @@ function printDinner()
     ["Chickpea and Spinach Stew.png"],
     ["Pesto Chicken Pasta.jpg"]
   ] 
+  //updates the source of the image thtas already in html
   pasteImg.src =  "Images/Dinner/" + images[num];
   recipeText.innerHTML = dDText + " " + recipes[num];
 }
-function resetBox()
-{
-  let output = document.getElementById("Output");
 
-  output.innerHTML = "";
-}
-
+//function for christmas theme
 function christmasCss() {
   const currentDate = new Date();
   const currentMonth = currentDate.getMonth() + 1; // Adding 1 because getMonth() returns a zero-based index
-  const currentDay = currentDate.getDate(); // Get the day of the month
+  const currentDay = currentDate.getDate() + 1; // Get the day of the month
   const navbar = document.getElementById('navbar');
   const home = document.getElementById('home');
 
   var iframe = document.getElementById("iframe");
 
-  // Check the current month and day, and change the stylesheet accordingly
+  //If its dec 21-25th change theme to christmas
   if (currentMonth == 12 && currentDay >= 21 && currentDay <= 25) {
     navbar.className += "Christmas";
     home.className += "Christmas";
@@ -156,10 +160,4 @@ function christmasCss() {
     
   }
 }
-function hide(){
-  
-  //let hidden = iframe.getAttribute("hidden")
-  //let hidden = element.getAttribute("hidden");
 
-  
-}
