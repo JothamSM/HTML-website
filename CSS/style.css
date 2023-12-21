@@ -390,8 +390,7 @@ body.homeChristmas{
 .navbarChristmas a.move{
   float:right;
 }
-iframe{
-  border-radius:12px;
-  width:100%;
-  border:0px;
+.Icon{
+  color:white;
+  padding: 9px;
 }
