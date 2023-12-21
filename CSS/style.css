@@ -274,11 +274,7 @@ body.home {
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
-  .dinnerButtons, .lunchButtons, .breakfastButtons {
-    padding: .75rem 1.5rem;
-  }
-}
+
 
 
 body.homeChristmas{
@@ -323,6 +319,20 @@ body.homeChristmas{
   background-color: darkgreen;
   color: white;
 }
+
+.navbar a.move{
+  float:right;
+}
+.navbarChristmas a.move{
+  float:right;
+}
+
+.Icon{
+  color:white;
+  margin-top:9px;
+  float:left;
+}
+
 #bfHeading{
     width: 1000px;
     height: auto;
@@ -355,21 +365,28 @@ body.homeChristmas{
 }
 
 
-@media screen and (max-width: 975px) {
+@media only screen and (max-width: 975px) {
+  body{
+    margin-top:100px;
+  }
   .navbarChristmas a:hover {
     background-color: yellow;
     color: darkred;
   }
   .navbar a{
-    float: none;
+    clear: both;
     display:block;
-    text-align: left;
   }
   .navbarChristmas a{
-    float: none;
+    clear: both;
     display:block;
-    text-align: left;
   } 
+  .navbar a.move{
+    float:left;
+  }
+  .navbarChristmas a.move{
+    float:left;
+  }
    #breakfastImg{
       height:1px;
       visibility: hidden;
@@ -385,15 +402,4 @@ body.homeChristmas{
     width: auto;
     height: auto;
    }
-}
-.navbar a.move{
-  float:right;
-}
-.navbarChristmas a.move{
-  float:right;
-}
-.Icon{
-  color:white;
-  margin-top:9px;
-  float:left;
 }
