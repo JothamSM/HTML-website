@@ -337,10 +337,9 @@ body.homeChristmas{
     display:block;
     text-align: left;
   }
-  #myLinks{
-    float:none;
+  .navbarChristmas a{
+    float: none;
+    display:block;
+    text-align: left;
   }
-}
-#myLinks{
-  float:right;
 }
